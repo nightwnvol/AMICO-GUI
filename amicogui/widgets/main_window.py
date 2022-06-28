@@ -13,7 +13,7 @@ from preview_window import PreviewWindow
 from preferences_dialog import PreferencesDialog
 from validators import *
 
-amico_config_file = path.abspath(path.join(path.dirname(__file__), 'amico_gui.cfg'))
+amico_config_file = path.abspath(path.join(path.dirname(__file__), 'amicogui.cfg'))
 
 def load_config():
     config = configparser.ConfigParser()

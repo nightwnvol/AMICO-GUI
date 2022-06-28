@@ -4,7 +4,7 @@ from ui.recents_dialog_ui import Ui_dialog
 import configparser
 
 from os import path
-amico_config_file = path.abspath(path.join(path.dirname(__file__), 'amico_gui.cfg'))
+amico_config_file = path.abspath(path.join(path.dirname(__file__), 'amicogui.cfg'))
 
 class RecentsDialog(QDialog):
     def __init__(self):

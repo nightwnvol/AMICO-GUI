@@ -5,7 +5,7 @@ import configparser
 from multiprocessing import cpu_count
 
 from os import path
-amico_config_file = path.abspath(path.join(path.dirname(__file__), 'amico_gui.cfg'))
+amico_config_file = path.abspath(path.join(path.dirname(__file__), 'amicogui.cfg'))
 
 class PreferencesDialog(QDialog):
     def __init__(self):

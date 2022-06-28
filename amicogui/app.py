@@ -41,8 +41,8 @@ if __name__ == "__main__":
     main_window.show()
 
     config = configparser.ConfigParser()
-    # config.read('amico_gui.cfg')
-    config.read(abspath(path_join(dirname(__file__), 'amico_gui.cfg')))
+    # config.read('amicogui.cfg')
+    config.read(abspath(path_join(dirname(__file__), 'amicogui.cfg')))
     if int(config['N_RECENTS']['n_recents']) > 0:
         recents_dialog = RecentsDialog()
         recents_dialog.show()
