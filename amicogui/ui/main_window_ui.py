@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'main_window.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.2.2
+## Created by: Qt User Interface Compiler version 6.3.1
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -22,7 +22,7 @@ from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QFrame,
     QPushButton, QRadioButton, QSizePolicy, QSlider,
     QWidget)
 
-from line_edits import (DirectoryLineEdit, FileLineEdit)
+from ..line_edits import (DirectoryLineEdit, FileLineEdit)
 from pyqtgraph import ImageView
 
 class Ui_window(object):

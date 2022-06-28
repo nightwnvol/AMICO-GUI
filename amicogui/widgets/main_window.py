@@ -2,16 +2,16 @@ from xmlrpc.client import Boolean, boolean
 from PySide6.QtGui import QValidator, QIntValidator, QDoubleValidator, QAction, QScreen
 from PySide6.QtWidgets import QMainWindow, QFileDialog, QLineEdit, QMessageBox, QApplication
 from PySide6.QtCore import Slot, QLocale
-from ui.main_window_ui import Ui_window
+from ..ui.main_window_ui import Ui_window
 import configparser
 from multiprocessing import cpu_count
 from os import path, listdir, pardir
-from workers import LoadDataWorker, SetupModelWorker, FitModelWorker
+from ..workers import LoadDataWorker, SetupModelWorker, FitModelWorker
 import nibabel as nib
 import numpy as np
-from preview_window import PreviewWindow
-from preferences_dialog import PreferencesDialog
-from validators import *
+from .preview_window import PreviewWindow
+from .preferences_dialog import PreferencesDialog
+from ..validators import *
 
 amico_config_file = path.abspath(path.join(path.dirname(__file__), pardir, 'amicogui.cfg'))
 

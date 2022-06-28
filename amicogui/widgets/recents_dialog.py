@@ -1,6 +1,6 @@
 from PySide6.QtWidgets import QDialog, QListWidgetItem
 from PySide6.QtCore import Slot
-from ui.recents_dialog_ui import Ui_dialog
+from ..ui.recents_dialog_ui import Ui_dialog
 import configparser
 
 from os import path, pardir

@@ -1,6 +1,6 @@
 from PySide6.QtWidgets import QDialog
 from PySide6.QtCore import Slot
-from ui.preferences_dialog_ui import Ui_dialog
+from ..ui.preferences_dialog_ui import Ui_dialog
 import configparser
 from multiprocessing import cpu_count
 

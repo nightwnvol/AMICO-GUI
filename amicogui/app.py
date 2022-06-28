@@ -1,15 +1,10 @@
-# TODO to remove
-from os import environ
 from os.path import pathsep, abspath, dirname, join as path_join
-environ['PATH'] += pathsep + abspath(path_join(dirname(__file__), 'jdk', 'bin'))
-environ['PATH'] += pathsep + abspath(path_join(dirname(__file__), 'camino', 'bin'))
-environ['CAMINO_HEAP_SIZE'] = '4000'
-
 import sys
 from PySide6.QtWidgets import QApplication
-from widgets.main_window import MainWindow
-from widgets.recents_dialog import RecentsDialog
+from .widgets.main_window import MainWindow
+from .widgets.recents_dialog import RecentsDialog
 import configparser
+from .logger import Logger
 
 def start_app():
     app = QApplication(sys.argv)

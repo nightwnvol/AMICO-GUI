@@ -2194,12 +2194,12 @@
   <customwidget>
    <class>DirectoryLineEdit</class>
    <extends>QLineEdit</extends>
-   <header>line_edits</header>
+   <header>..line_edits</header>
   </customwidget>
   <customwidget>
    <class>FileLineEdit</class>
    <extends>QLineEdit</extends>
-   <header>line_edits</header>
+   <header>..line_edits</header>
   </customwidget>
  </customwidgets>
  <tabstops>

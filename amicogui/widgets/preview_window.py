@@ -1,7 +1,7 @@
 from PySide6.QtWidgets import QMainWindow
 from PySide6.QtCore import Slot
 from preview_window_ui import Ui_window
-from ui.preview_window_ui import Ui_window
+from ..ui.preview_window_ui import Ui_window
 from os import path, listdir
 import nibabel as nib
 import numpy as np
