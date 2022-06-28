@@ -1,0 +1,4 @@
+include amicogui/amicogui.cfg
+include amicogui/style.qss
+include amicogui/ui/*
+include amicogui/widgets/*
