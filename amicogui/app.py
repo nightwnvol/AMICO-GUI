@@ -11,7 +11,7 @@ from widgets.main_window import MainWindow
 from widgets.recents_dialog import RecentsDialog
 import configparser
 
-if __name__ == "__main__":
+def start_app():
     app = QApplication(sys.argv)
 
     main_window = MainWindow()
