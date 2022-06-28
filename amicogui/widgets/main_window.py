@@ -5,7 +5,7 @@ from PySide6.QtCore import Slot, QLocale
 from ui.main_window_ui import Ui_window
 import configparser
 from multiprocessing import cpu_count
-from os import path, listdir
+from os import path, listdir, pardir
 from workers import LoadDataWorker, SetupModelWorker, FitModelWorker
 import nibabel as nib
 import numpy as np
@@ -13,7 +13,7 @@ from preview_window import PreviewWindow
 from preferences_dialog import PreferencesDialog
 from validators import *
 
-amico_config_file = path.abspath(path.join(path.dirname(__file__), 'amicogui.cfg'))
+amico_config_file = path.abspath(path.join(path.dirname(__file__), pardir, 'amicogui.cfg'))
 
 def load_config():
     config = configparser.ConfigParser()

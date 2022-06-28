@@ -4,8 +4,8 @@ from ui.preferences_dialog_ui import Ui_dialog
 import configparser
 from multiprocessing import cpu_count
 
-from os import path
-amico_config_file = path.abspath(path.join(path.dirname(__file__), 'amicogui.cfg'))
+from os import path, pardir
+amico_config_file = path.abspath(path.join(path.dirname(__file__), pardir, 'amicogui.cfg'))
 
 class PreferencesDialog(QDialog):
     def __init__(self):

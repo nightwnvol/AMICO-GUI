@@ -3,8 +3,8 @@ from PySide6.QtCore import Slot
 from ui.recents_dialog_ui import Ui_dialog
 import configparser
 
-from os import path
-amico_config_file = path.abspath(path.join(path.dirname(__file__), 'amicogui.cfg'))
+from os import path, pardir
+amico_config_file = path.abspath(path.join(path.dirname(__file__), pardir, 'amicogui.cfg'))
 
 class RecentsDialog(QDialog):
     def __init__(self):
